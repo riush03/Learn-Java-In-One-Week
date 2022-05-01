@@ -1,0 +1,51 @@
+
+  1. Data Types , Variables and Arrays In Java
+
+     The primitive types
+     ->Java defines eight primitive types of data which are:
+        1.byte
+        2.short
+        3.int
+        4.long
+        5.char
+        6.float
+        7.double
+        8.boolean
+
+     They are then put into for groups which are
+     -Integers - this group include byte,short,int and long which are whole signed numbers.
+     -Floating point numbers - this group include float and double which includes numbers with precision part.
+     -Characters - this group include char which represent symbols in a charcter for exampple letters.
+     -Boolean - this group includes boolean which is a special type representing true or false.
+
+ How Java automatic conversion occurs. It onl occurs if the following two conditions are met:
+         1.The two types are compatible.
+         2.The destination type is larger than the source type.
+
+ Casting Incompatible types
+ To create a conversion between two types you need to use a cast. A cast is simply an explict type conversion. Example the following
+ fragment cast an int to a byte.
+       int a;
+       byte b;
+       b = (byte) a;
+
+Type promotion rules
+    1. All bytes,short and char values are promoted to int.
+    2.If one operand is long then it is converted to long.
+    3.If one operand is float the entire operand is converted to float.
+
+Arrays
+An array is a group of liked-typed variables that are referenced to by a common name.
+   one-dimesional arrays - list of like-typed variables.
+   How to create an one-dimensional array
+      type[] name;
+      int[] months;
+      months = new int[12]
+
+   Multidimensional arrays
+   These are implemented as array of arrays.
+   int[][] twoD = new int[4][5]
+
+Local variable type inference
+To use local variable type inference the variable must be declared with a var as the type name ans it must inclide
+an intializer.
